@@ -1,0 +1,289 @@
+<div class="overlay" *ngIf="showOverlay">
+  <p-progressSpinner></p-progressSpinner>
+</div>
+
+<h3>Theme changer</h3>
+<div class="grid mx-0">
+  <div class="col-12">
+    <h3>Bootstrap</h3>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Bootstrap Light Blue"
+      styleClass="w-100 p-button-primary"
+      (click)="setBootstrapLightBlueTheme()"
+    >
+    </p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Bootstrap Dark Blue"
+      styleClass="w-100 p-button-danger"
+      (click)="setBootstrapDarkBlueTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Bootstrap Dark Purple"
+      styleClass="w-100 p-button-outlined p-button-primary"
+      (click)="setBootstrapDarkPurpleTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Bootstrap Light Purple"
+      styleClass="w-100 p-button-outlined p-button-secondary"
+      (click)="setBootstrapLightPurpleTheme()"
+    ></p-button>
+  </div>
+
+  <div class="col-12">
+    <h3>Material Design</h3>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MD Dark Deep Purple"
+      styleClass="w-100 p-button-raised p-button-text"
+      (click)="setMdDarkDeepPurpleTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MD Dark Indigo"
+      styleClass="w-100 p-button-raised p-button-text p-button-secondary"
+      (click)="setMdDarkIndigoTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MD Light Deep Purple"
+      styleClass="w-100 p-button-raised p-button-text p-button-success"
+      (click)="setMdLightDeepPurpleTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MD Light Indigo"
+      styleClass="w-100 p-button-raised p-button-text p-button-info"
+      (click)="setMdLightIndigoTheme()"
+    ></p-button>
+  </div>
+
+  <div class="col-12">
+    <h3>Material Design Compact</h3>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MDC Dark Indigo"
+      styleClass="w-100 p-button-secondary"
+      (click)="setMdcDarkIndigoTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MDC Dark Deep Purple"
+      styleClass="w-100 p-button-raised p-button-text p-button-warning"
+      (click)="setMdcDarkDeepPurpleTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MDC Light Deep Purple"
+      styleClass="w-100 p-button-raised p-button-text p-button-help"
+      (click)="setMdcLightDeepPurpleTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="MDC Light Indigo"
+      styleClass="w-100 p-button-raised p-button-text p-button-danger"
+      (click)="setMdcLightIndigoTheme()"
+    ></p-button>
+  </div>
+
+  <div class="col-12">
+    <h3>Others</h3>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Arya Blue"
+      styleClass="w-100 p-button-success"
+      (click)="setAryaBlueTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Arya Green"
+      styleClass="w-100 p-button-info"
+      (click)="setAryaGreenTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Arya Orange"
+      styleClass="w-100 p-button-warning"
+      (click)="setAryaOrangeTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Arya Purple"
+      styleClass="w-100 p-button-help"
+      (click)="setAryaPurpleTheme()"
+    ></p-button>
+  </div>
+
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Fluent Light"
+      styleClass="w-100 p-button-outlined p-button-success"
+      (click)="setFluentLightTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Luna Amber"
+      styleClass="w-100 p-button-outlined p-button-info"
+      (click)="setLunaAmberTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Luna Blue"
+      styleClass="w-100 p-button-outlined p-button-warning"
+      (click)="setLunaBlueTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Luna Green"
+      styleClass="w-100 p-button-outlined p-button-help"
+      (click)="setLunaGreenTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Luna Pink"
+      styleClass="w-100 p-button-outlined p-button-danger"
+      (click)="setLunaPinkTheme()"
+    ></p-button>
+  </div>
+
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Nova"
+      styleClass="w-100 p-button-text"
+      (click)="setNovaTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Nova Accent"
+      styleClass="w-100 p-button-raised p-button-text p-button-plain"
+      (click)="setNovaAccentTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Nova Alt"
+      styleClass=" p-button-text p-button-secondary"
+      (click)="setNovaAltTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Rhea"
+      styleClass="w-100 p-button-text p-button-success"
+      (click)="setRheaTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Saga Blue"
+      styleClass="w-100 p-button-text p-button-info"
+      (click)="setSagaBlueTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Saga Green"
+      styleClass="w-100 p-button-text p-button-warning"
+      (click)="setSagaGreenTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Saga Orange"
+      styleClass="w-100 p-button-text p-button-help"
+      (click)="setSagaOrangeTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Saga Purple"
+      styleClass="w-100 p-button-text p-button-danger"
+      (click)="setSagaPurpleTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Vela Blue"
+      styleClass="w-100 p-button-palin"
+      (click)="setVelaBlueTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Vela Orange"
+      styleClass="w-100 p-button-info"
+      (click)="setVelaOrangeTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Vela Green"
+      styleClass="w-100 p-button-help"
+      (click)="setVelaGreenTheme()"
+    ></p-button>
+  </div>
+  <div class="col-4">
+    <p-button
+      type="button"
+      label="Vela Purple"
+      styleClass="w-100 p-button-secondary"
+      (click)="setVelaPurpleTheme()"
+    ></p-button>
+  </div>
+</div>

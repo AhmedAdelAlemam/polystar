@@ -1,0 +1,17 @@
+<div class="style-manager">
+  <p-sidebar [(visible)]="visibleSidebar" position="right" [baseZIndex]="10000">
+    <hr />
+    <app-theme-changer></app-theme-changer>
+  </p-sidebar>
+  <div class="p-text-right">
+    <p-button
+      class="changer-toggler"
+      pRipple
+      title="Style Manager"
+      styleClass="p-button-outlined p-button-help"
+      type="button"
+      icon="pi pi-cog"
+      (click)="sideBarStatus()"
+    ></p-button>
+  </div>
+</div>
