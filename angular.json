@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "polystart-coding-test": {
+    "polystar-coding-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/polystart-coding-test",
+            "outputPath": "dist/polystar-coding-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,11 @@
             "inlineStyleLanguage": "less",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@angular/cdk/overlay-prebuilt.css",
+              "node_modules/@angular/cdk/_index.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeflex/primeflex.scss",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.less"
             ],
             "scripts": []
@@ -70,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "polystart-coding-test:build:production"
+              "browserTarget": "polystar-coding-test:build:production"
             },
             "development": {
-              "browserTarget": "polystart-coding-test:build:development"
+              "browserTarget": "polystar-coding-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "polystart-coding-test:build"
+            "browserTarget": "polystar-coding-test:build"
           }
         },
         "test": {
@@ -100,5 +104,5 @@
       }
     }
   },
-  "defaultProject": "polystart-coding-test"
+  "defaultProject": "polystar-coding-test"
 }
