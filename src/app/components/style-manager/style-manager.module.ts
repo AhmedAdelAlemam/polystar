@@ -7,6 +7,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { ThemeChangerComponent } from './theme-changer/theme-changer.component';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [ThemeChangerComponent],
@@ -19,6 +20,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     SidebarModule,
     ButtonModule,
     ProgressSpinnerModule,
+    TooltipModule,
   ],
   exports: [ThemeChangerComponent],
 })
