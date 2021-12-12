@@ -41,8 +41,8 @@ testem.log
 /typings
 
 #lock files
-yarn.lock
-package-lock.json
+/yarn.lock
+/package-lock.json
 
 # System Files
 .DS_Store
