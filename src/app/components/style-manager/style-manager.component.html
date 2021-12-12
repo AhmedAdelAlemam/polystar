@@ -1,7 +1,7 @@
 <div class="style-manager">
   <p-sidebar [(visible)]="visibleSidebar" position="right" [baseZIndex]="10000">
     <hr />
-    <app-theme-changer></app-theme-changer>
+    <app-theme-changer (click)="hideVisibleSidebar()"></app-theme-changer>
   </p-sidebar>
   <div class="p-text-right">
     <p-button

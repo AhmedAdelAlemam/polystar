@@ -20,6 +20,8 @@ export class StyleManagerComponent implements OnInit {
   }
 
   hideVisibleSidebar() {
-    this.visibleSidebar = false;
+    setTimeout(() => {
+      this.visibleSidebar = false;
+    }, 1000);
   }
 }
